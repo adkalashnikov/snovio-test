@@ -1,0 +1,28 @@
+@import 'normalize-scss';
+@include normalize();
+
+@import 'variables';
+@import 'mixins';
+@import 'fonts';
+@import 'global';
+
+// components
+@import './components/header';
+@import './components/pricing-hero';
+@import './components/pricing-badge';
+@import './components/pricing-card';
+@import './components/pricing-table';
+@import './components/footer';
+@import './components/modal';
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.page-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+}

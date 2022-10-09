@@ -1,0 +1,202 @@
+.pricing-card {
+    width: 192px;
+    background: linear-gradient(180deg, #1a1a1a 0%, rgba(15, 15, 15, 0) 100%);
+    border-radius: 14px;
+    padding: 22px 25px 33px;
+    position: relative;
+    transition: box-shadow .33s ease-out;
+    animation: .33s ease-out fadeLeft forwards;
+    opacity: 0;
+    visibility: hidden;
+
+    &:nth-child(2) {
+        animation-delay: .1s;
+    }
+    
+    &:nth-child(3) {
+        animation-delay: .25s;
+    }
+    
+    &:nth-child(4) {
+        animation-delay: .3s;
+    }
+    
+    &:nth-child(5) {
+        animation-delay: .45s;
+    }
+    
+    &__title {
+        margin-bottom: 18px;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 47px;
+        text-align: center;
+        color: #ffffff;
+        text-transform: uppercase;
+    }   
+    
+    &__price {
+        margin-bottom: 17px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: #92979C;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding-left: 1px;
+    }
+    
+    &__price-orig {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        color: #fb6464;
+        position: relative;
+        display: block;
+        padding-bottom: 3px;
+        margin-right: 4px;
+        
+        &:before {
+            position: absolute;
+            content: '';
+            display: block;
+            width: calc(100% + 3px);
+            height: 2px;
+            background: #fb6464;
+            left: -2px;
+            top: 43%;
+            transform: translateY(-50%);
+        }
+    }
+    
+    &__price-disc {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 38px;
+        color: #ffffff;
+        display: inline-flex;
+        padding-right: 3px;
+        text-transform: uppercase;
+    }
+    
+    &__price-date {
+        padding-bottom: 4px;
+    }
+    
+    &__text {
+        font-size: 14px;
+        line-height: 150%;
+        color: #92979c;
+        
+        span {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 150%;
+            color: #b9b9b9;
+        }
+    }
+    
+    &__btn {
+        cursor: pointer;
+        border: 0;
+        margin: 0;
+        padding: 12px;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        background: #dc324a;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 100%;
+        display: flex;
+        justify-content: center;
+        color: #ffffff;
+        border-bottom-right-radius: 14px;
+        border-bottom-left-radius: 14px;
+        position: absolute;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    &.active {
+        @include min-w($screen-xl) {
+            box-shadow: inset 0 0 0 1px #dc324a;
+            z-index: 1;
+
+            .pricing-card__btn {
+                z-index: 1;
+                animation: .33s ease-out slideDown forwards;
+            }
+        }
+    }
+    
+    &:hover {
+        box-shadow: inset 0 0 0 1px #DC324A;
+        z-index: 1;
+
+        .pricing-card__btn {
+            z-index: 1;
+            animation: .33s ease-out slideDown forwards;
+        }
+    }
+    
+    &__close-btn {
+        position: absolute;
+        top: 17px;
+        right: 20px;
+        width: 10px;
+        height: 10px;
+        background-image: url("../images/ic-close.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 50%;
+        cursor: pointer;
+    }
+    
+    &__spinner {
+        margin: 19px auto 0;
+        width: 43px;
+        height: 43px;
+        padding: 9px;
+        border-radius: 50%;
+        position: relative;
+        
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background: linear-gradient(180deg, #d9d9d9 0%, rgba(217, 217, 217, 0) 100%);
+            animation: 1.5s linear rotate infinite ;
+            border-radius: 50%;
+            z-index: -1;
+        }
+        
+        span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            background: #1a1a1a;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 25px;
+            color: #ffffff;
+        }
+    }
+}
+
+.modal {
+    .pricing-card {
+        padding-top: 27px;
+        padding-bottom: 18px;
+        background: linear-gradient(180deg, #1a1a1a 100.17%, rgba(15, 15, 15, 0) 100.18%);
+        box-shadow: inset 0 0 0 1px #dc324a;
+    }
+}

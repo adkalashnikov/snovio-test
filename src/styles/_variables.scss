@@ -1,0 +1,21 @@
+//  Цвет
+$body-bg: #0f0f0f;
+$text-color: #92979c;
+
+// Цвет ссылки
+$link-color: #92979c;
+$link-color--hover: lighten($link-color, 20%);
+
+//  Типографика
+$font-family: 'Roboto', sans-serif;
+$font-family-secondary: 'ProbaPro', sans-serif;
+$font-size: 14px;
+$font-weight: 400;
+$line-height: 1.5;
+
+//  Адаптивность и соответствующие ширины контейнера
+$screen-xs: 0;
+$screen-sm: 375px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xl: 1080px;

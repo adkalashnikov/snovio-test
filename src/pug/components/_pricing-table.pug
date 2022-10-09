@@ -1,0 +1,5 @@
+.pricing-table
+    .page-container
+        .pricing-table__inner
+            - const pricingCards = require('./data/pricing-cards.json')
+            +pricingCards(pricingCards, 2)

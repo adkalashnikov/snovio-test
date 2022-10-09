@@ -1,0 +1,12 @@
+.page-header {
+    padding-top: 47px;
+    
+    &__inner {
+        display: flex;
+        justify-content: center;
+    }
+    
+    &__logo-img {
+        width: 119px;
+    }
+}

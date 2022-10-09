@@ -1,0 +1,14 @@
+include pug/libs/_libs
+
+doctype html
+html(lang='en')
+    include pug/_head
+    body
+        .wrapper
+            .content
+                include /pug/components/_header
+                main.page-main
+                    include /pug/components/_pricing-hero
+                    include /pug/components/_pricing-table
+            include /pug/components/_footer
+            include /pug/components/_modal

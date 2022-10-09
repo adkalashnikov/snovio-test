@@ -1,0 +1,117 @@
+[
+  {
+    "title": "s",
+    "origPrice": 39,
+    "discountPrice": 19,
+    "content": [
+      {
+        "title": "1 000",
+        "text": "credits"
+      }, {
+        "title": "1 000",
+        "text": "recipients"
+      }, {
+        "title": "Unlimited",
+        "text": "users"
+      }, {
+        "title": "Unlimited",
+        "text": "export"
+      }, {
+        "title": "Unlimited",
+        "text": "integrations"
+      }
+    ]
+  },
+  {
+    "title": "m",
+    "origPrice": 79,
+    "discountPrice": 39,
+    "content": [
+      {
+        "title": "5 000",
+        "text": "credits"
+      }, {
+        "title": "5 000",
+        "text": "recipients"
+      }, {
+        "title": "Unlimited",
+        "text": "users"
+      }, {
+        "title": "Unlimited",
+        "text": "export"
+      }, {
+        "title": "Unlimited",
+        "text": "integrations"
+      }
+    ]
+  },
+  {
+    "title": "l",
+    "origPrice": 169,
+    "discountPrice": 84,
+    "content": [
+      {
+        "title": "20 000",
+        "text": "credits"
+      }, {
+        "title": "20 000",
+        "text": "recipients"
+      }, {
+        "title": "Unlimited",
+        "text": "users"
+      }, {
+        "title": "Unlimited",
+        "text": "export"
+      }, {
+        "title": "Unlimited",
+        "text": "integrations"
+      }
+    ]
+  },
+  {
+    "title": "xl",
+    "origPrice": 289,
+    "discountPrice": 144,
+    "content": [
+      {
+        "title": "50 000",
+        "text": "credits"
+      }, {
+        "title": "Unlimited",
+        "text": "recipients"
+      }, {
+        "title": "Unlimited",
+        "text": "users"
+      }, {
+        "title": "Unlimited",
+        "text": "export"
+      }, {
+        "title": "Unlimited",
+        "text": "integrations"
+      }
+    ]
+  },
+  {
+    "title": "xxl",
+    "origPrice": 578,
+    "discountPrice": 289,
+    "content": [
+      {
+        "title": "100 000",
+        "text": "credits"
+      }, {
+        "title": "Unlimited",
+        "text": "recipients"
+      }, {
+        "title": "Unlimited",
+        "text": "users"
+      }, {
+        "title": "Unlimited",
+        "text": "export"
+      }, {
+        "title": "Unlimited",
+        "text": "integrations"
+      }
+    ]
+  }
+]

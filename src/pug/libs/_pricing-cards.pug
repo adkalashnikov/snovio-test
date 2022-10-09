@@ -1,0 +1,12 @@
+mixin pricingCards(pricingCards, activeCard=1)
+    each card, index in pricingCards
+        .pricing-card(class=(activeCard === index+1 ? "active" : ''))
+            .pricing-card__title= `${card.title}`
+            .pricing-card__price
+                span.pricing-card__price-orig= `$${card.origPrice}`
+                span.pricing-card__price-disc= `$${card.discountPrice}`
+                span.pricing-card__price-date= `/mo`
+            .pricing-card__text
+                each descriptionItem in card.content
+                    div!= `<span>${descriptionItem.title}</span> ${descriptionItem.text}`
+            button.pricing-card__btn Buy Now
